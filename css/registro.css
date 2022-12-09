@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.iniciosesion{
+    width: 400px;
+    height: 650px;
+    background-color: rgb(160, 240, 160);
+    margin: auto;
+    margin-top: 70px;
+    box-shadow: 7px 13px 37px;
+    padding: 20px 30px;
+    border-top: 4px solid green;
+    border-radius: 20px;
+    color: green;
+}
+
+.iniciosesion h5{
+    margin: 0;
+    text-align: center;
+    font-family: cursive;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1 px solid black;
+    font-size: 20px;
+}
+
+.iniciosesion a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: cursive;
+}
+
+.botones{
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 11px 10px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.boton{
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 11px 10px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ingresar{
+    width: 100%;
+    height: 40px;
+    background: green;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.registrar{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.registrar a{
+    text-decoration: none;
+    color: black;
+}
+

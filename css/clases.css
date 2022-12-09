@@ -1,0 +1,422 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    max-width: 2800px;
+    max-height: 652px;
+    min-width: 2800px;
+    min-height: 652px;
+    margin: auto;
+} */
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+header{
+    border-radius: 30px 30px 30px 30px;
+    background-color: green;
+    border: none;
+    height: 200px;
+    width: 100%;
+}
+.nombre{
+    margin-left: 71%;
+    margin-top: -50px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+.fotousuarioheader{
+    border: none;
+    height: 90px;
+    width: 90px;
+    margin-left: 92%;
+    margin-top: -65px;
+}
+.imagenusuarioheader{
+    border-radius: 15px 15px 15px 15px;
+}
+.login{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    margin-top: -100px;
+}
+.logoempresa{
+    margin-left: 130px;
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+}
+.logoempresa:hover{
+    zoom: 105%;
+    transition-duration: 0.3s;
+}
+.imagenlogoempresa{
+    border-radius: 50px 50px 50px 50px;
+}
+.horario{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: green;
+    margin-left: 130px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.horario:hover{
+    zoom: 105%;
+}
+.asistencia{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: green;
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+.asistencia:hover{
+    zoom: 105%;
+}
+.calificaciones{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: green;
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+.calificaciones:hover{
+    zoom: 105%;
+}
+.refuerzo{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: green;
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+.refuerzo:hover{
+    zoom: 105%;
+}
+.usuario{
+    width: 300px;
+    height: 350px;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: green;
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.imagenUsuario{
+    width: 250px;
+    border: none;
+    margin-top: 40px;
+    margin-left: 25px;
+    height: 180px;
+}
+.imgusuario{
+    border-radius: 15px 15px 15px 15px; 
+}
+p{
+    font-size: 35px;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 60px;
+}
+h1{
+    text-align: center;
+}
+.categoriaA1{
+    padding-top: 10px;
+}
+.NombreEdward{
+    margin-top: 20px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.casa{
+    height: 80px;
+    width: 80px;
+    margin-top: -50px;
+    margin-left: 76%;
+    border-right: 4px solid black ; 
+}
+.containerUno{
+    height: 1120px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    background-color: green;
+    grid-template-columns: auto auto;
+    display: grid;
+    gap: 30px;
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerDos{
+    border: none;
+    margin-left: 50px;
+    width: 500px; 
+    height: 1100px;
+}
+.containerTres{
+    border: none;
+    margin-top: 270px;
+    width: 1800px;
+    height: 500px;
+}
+footer{
+    border-radius: 30px 30px 30px 30px;
+    background-color:green;
+    border: none;
+    height: 200px;
+    width: 100%;
+}
+@media (max-width:600px){
+    .casa{
+        height: 50px;
+        width: 50px;
+        margin-left: 80%;
+    }
+    .nombre{
+        font-size: 25px;
+        margin-top: -5px;
+    }
+    .imagenusuarioheader{
+        margin-top: 60px;
+        height: 50px;
+        width: 50px;
+        margin-left: -20px;
+    }
+    .containerUno{
+        display: grid;
+        grid-template-columns: 100%;
+        height: 1750px;
+    }
+    .containerDos{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .containerTres{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: -50px;
+    }
+    .logoempresa{
+        margin-left: 20%;
+        width: 200px;
+    }
+    .horario{
+        margin-left: 20%;
+        width: 200px;
+    }
+    .asistencia{
+        margin-left: 20%;
+        width: 200px;
+    }
+    .calificaciones{
+        margin-left: 20%;
+        width: 200px;
+    }
+    .refuerzo{
+        margin-left: 20%;
+        width: 200px;
+    }
+    .usuario{
+        width: 250px;
+        margin-left: 15%;
+    }
+    .imagenUsuario{
+        width: 200px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+}
+@media (min-width:600px) and (max-width: 1200px){
+    .casa{
+        height: 50px;
+        width: 50px;
+        margin-left: 88%;
+    }
+    .nombre{
+        font-size: 25px;
+        margin-top: -5px;
+    }
+    .imagenusuarioheader{
+        margin-top: 60px;
+        height: 50px;
+        width: 50px;
+        margin-left: -20px;
+    }
+    .containerUno{
+        display: grid;
+        grid-template-columns: 100%;
+        height: 1850px;
+    }
+    .containerDos{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .containerTres{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: -50px;
+    }
+    .logoempresa{
+        margin-left: 35%;
+        width: 200px;
+    }
+    .horario{
+        margin-left: 35%;
+        width: 300px;
+    }
+    .asistencia{
+        margin-left: 35%;
+        width: 300px;
+    }
+    .calificaciones{
+        margin-left: 35%;
+        width: 300px;
+    }
+    .refuerzo{
+        margin-left: 35%;
+        width: 300px;
+    }
+    .usuario{
+        margin-left: 30%;
+        width: 350px;
+    }
+    .imagenUsuario{
+        width: 300px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media (min-width: 1200px) and (max-width:1600px){
+    .containerDos{
+        width: 220px;
+    }
+    .containerTres{
+        width: 800px;
+    }
+    .casita{
+        margin-left: -280px;
+    }
+    .nombre{
+        margin-left: 68%;
+        font-size: 25px;
+    }
+    .casa{
+        width: 50px;
+        height: 50px;
+    }
+    .imagenusuarioheader{
+        height: 70px;
+        width: 70px;
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .logoempresa{
+        margin-left: 40px;
+        width: 130px;
+    }
+    .horario{
+        margin-left: 40px;
+        width: 130px;
+    }
+    .asistencia{
+        margin-left: 40px;
+        width: 130px;
+    }
+    .calificaciones{
+        margin-left: 40px;
+        width: 130px;
+    }
+    .refuerzo{
+        margin-left: 40px;
+        width: 130px;
+    }
+    .usuario{
+        width: 250px;
+        margin-left: 10px;
+        width: 200px;
+    }
+    .imagenUsuario{
+        width: 150px;
+    }
+}
+@media (min-width: 1600px) and (max-width:2000px){
+    .casita{
+        margin-left: -160px;
+    }
+    .containerDos{
+        width: 320px;
+    }
+    .containerTres{
+        width: 1000px ;
+    }
+    .logoempresa{
+        margin-left: 60px;
+    }
+    .horario{
+        margin-left: 60px;
+    }
+    .asistencia{
+        margin-left: 60px;
+    }
+    .calificaciones{
+        margin-left: 60px;
+    }
+    .refuerzo{
+        margin-left: 60px;
+    }
+    .usuario{
+        margin-left: 10px;
+    }
+}
+@media (min-width:2000px) and (max-width:2600px){
+    .containerDos{
+        width: 320px;
+    }
+    .containerTres{
+        width: 1400px;
+    }
+    .logoempresa{
+        margin-left: 60px;
+    }
+    .horario{
+        margin-left: 60px;
+    }
+    .asistencia{
+        margin-left: 60px;
+    }
+    .calificaciones{
+        margin-left: 60px;
+    }
+    .refuerzo{
+        margin-left: 60px;
+    }
+    .usuario{
+        margin-left: 10px;
+    }
+}

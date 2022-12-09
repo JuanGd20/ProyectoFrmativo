@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    max-width: 2800px;
+    max-height: 652px;
+    min-width: 2800px;
+    min-height: 652px;
+    margin: auto;
+} */
+header{
+    border-radius: 30px 30px 30px 30px;
+    background-color: green;
+    border: none;
+    height: 200px;
+}
+ .containerUno{
+    height: 1120px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    border: none;
+    border-radius: 30px 30px 30px 30px; 
+    background-color: green;
+    grid-template-columns: 10% 90%;
+    display: grid; 
+    gap: 30px;
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logoempresa{
+    margin-left: 80px;
+    margin-top: 50px;
+    height: 200px;
+    border: none;
+} 
+
+.pagar{
+    background-color: green;
+}
+.pagar a{
+    text-decoration: none;
+    color: black;
+}
+.logoempresa:hover{
+    zoom: 105%;
+    transition-duration: 0.3s;
+}
+.containerTres{
+   position: relative;
+    margin-top: 50px;
+    margin-right: 50px; 
+    height: 1000px;
+    width: 2100px; 
+    border: 2px solid black;
+    border-radius: 30px 30px 30px 30px;
+    background-color: white;
+}
+.formulario{
+    position: absolute; 
+    margin-left: 580px; 
+    margin-top: 60px; 
+    width: 800px; 
+    border: none;
+}
+.tablaformulario{
+    height: 800px;
+}
+legend{
+    font-size: 50px;
+    text-align: center;
+}
+label{
+    font-size: 40px;
+}
+input{
+    margin-left: 20px;  
+    font-size: 40px;
+    border-radius: 30px 30px 30px 30px;
+    text-align: center;
+}
+select{
+    font-size: 40px;
+    border-radius: 30px 30px 30px 30px;
+    text-align: center;
+}
+.formulario .pagar{
+    text-align: center;
+    border-radius: 0%;
+
+}
+.formulario .pagar:hover{
+    zoom: 105%;
+    color: black;
+    transition: color 0.3s ease;
+    box-shadow: 2px 2px 2px 2px black;
+}
+p{
+    font-size: 35px;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 60px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px 50px 50px 50px;
+}
+footer{
+    border-radius: 30px 30px 30px 30px;
+    background-color: green;
+    border: none;
+    height: 200px;
+}
+    @media (max-width:650px){
+    .containerTres{
+        height: 900px;
+        width: 280px;
+        margin-top: 220px;
+        margin-left: -30px;
+    }
+    .containerUno{
+        height: 1200px;
+    }
+    .formulario{
+        margin-left: 20px;
+    }
+    legend{
+        font-size: 10px;
+        margin-left: -288px;
+    }
+    label{
+        font-size: 8px;
+    }
+    input{
+        font-size: 8px;
+    }
+    select{
+        font-size: 8px;
+    }
+    .logoempresa{
+        height: 120px;
+        width: 120px;
+    }
+
+
+}  
+
+ @media (min-width:650px) and (max-width:950px){
+     .containerTres{
+        margin-top: 260px;
+        margin-left: -40px;
+        width: 500px;
+    }
+     .containerUno{
+        height: 1350px;
+    } 
+    .formulario{
+        margin-left: 60px;
+    }
+    legend{
+        font-size: 25px;
+        margin-left: -200px;
+    }
+    label{
+        font-size: 15px;
+    }
+    input{
+        font-size: 15px;
+    }
+    select{
+        font-size: 15px;
+    }
+    .logoempresa{
+        height: 150px;
+        width: 150px;
+        margin-left: 100px;
+    } 
+
+} 
+   @media (min-width:950px) and (max-width:1200px){
+    .containerTres{
+    height: 900px;
+    width: 800px;
+    margin-top: 300px;
+    margin-left: -40px;
+    }
+    .containerUno{
+        height: 1300px;
+    }
+    .formulario{
+        margin-left: 60px;
+        font-size: 10px;
+    }
+    legend{
+        font-size: 30px;
+        margin-left: -50px;
+    }
+    label{
+        font-size: 25px;
+    }
+    input{
+        font-size: 25px;
+    }
+    select{
+        font-size: 25px;
+    }
+    .logoempresa{
+        height: 150px;
+        width: 150px;
+        margin-left: 100px;
+    } 
+} 
+     @media (min-width:1201px) and (max-width:1600px){
+    .containerTres{
+        width: 750px;
+        margin-top: 250px;
+    }
+    .containerUno{
+        height: 1350px;
+    }
+    .formulario{
+        margin-left: 80px;
+    }
+    legend{
+        font-size: 30px;
+        margin-left: -80px;
+    }
+    label{
+        font-size: 23px;
+    }
+    input{
+        font-size: 23px;
+    }
+    select{
+        font-size: 23px;
+    }
+    .logoempresa{
+        height: 150px;
+        width: 150px;
+    } 
+}
+@media (min-width:1600px) and (max-width:2600px){
+    .containerTres{
+        margin-left: 150px;
+        width: 1100px;
+    }
+    .formulario{
+        margin-left: 80px;
+    }
+    .logoempresa{
+        height: 150px;
+        width: 150px;
+    } 
+} 
